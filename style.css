@@ -1,0 +1,165 @@
+/* 
+Survey Form page for Restaurant - feedback/survey form
+ */
+ 
+ :root{
+    --color-dark: rgb(0, 40, 77);
+    --color-onetop: rgba(153, 255, 153, 0.5);
+    --color-two: rgba(133, 51, 255, 0.5);
+    --color-greenblue: rgba(0, 128, 128, 0.5);
+    --color-white: rgb(255, 255, 230);
+    --color-greenblue : rgb(0, 230, 230);
+    --color-greenblue-alpha: rgba(0, 51, 102, 0.9);
+  }
+  
+  *, *::before, *::after{
+    box-sizing: border-box;
+  }
+  
+  body {
+    content: '';
+    color: var(--color-white);
+    font-weight: 400;
+    line-height: 1.4;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    background-image: linear-gradient(110deg, var(--color-onetop), var(--color-two));
+    z-index: -1;
+    
+  }
+  
+  h1 {
+    font-weight: 500;
+    line-height: 1.2;
+  }
+  
+  p {
+    font-size: 1.125rem;
+  }
+  
+  h1, p{
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+  }
+  
+  label{
+    display: flex;
+    font-size: 1.12rem;
+    align-items: center;
+    margin-bottom: .5rem;
+  }
+  
+  input, select, textarea, button {
+    margin: 0;
+    font-size: inherit;
+    line-height: inherit;
+    font-family: inherit;
+  }
+  
+  button{
+    border: none;
+  }
+  
+  .container{
+    margin: 3rem auto 0 auto;
+    width: 100%;
+  }
+  
+  @media (min-width: 550px){
+    .container{
+      max-width: 520px;
+    }
+  }
+  
+  @media (min-width: 750px){
+    .container{
+      max-width: 700px;
+    }
+  }
+  
+  header {
+    padding: 0 0.5rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    color: var(--color-dark);
+  }
+  
+  .description{
+    font-style: italic;
+    font-weight: 250;
+    text-shadow: 1.5px 1px 1px rgba(153, 153, 0, 0.7);
+  }
+  
+  .about{
+    margin-left: .3rem;
+    font-size: .9rem;
+    color: lightgray;
+  }
+  
+  form{
+    background-color: var(--color-greenblue-alpha);
+    padding: 2.5rem 0.5rem;
+    border-radius: 0.28rem;
+  }
+  
+  @media (min-width: 500px){
+    form{
+      padding: 2.5rem;
+    }
+  }
+  
+  .details{
+    margin: 0 auto 1.2rem auto;
+    padding: .25rem;
+  }
+  
+  .enter-field {
+    display: block;
+    width: 100%;
+    height: 2.3rem;
+    padding: .3rem .7rem;
+    color: gray;
+    background-color: white;
+    background-clip: padding-box;
+    border: 1px solid rgb(0, 57, 77);
+    border-radius: 0.22rem;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+  }
+  
+  .enter-field:focus {
+    border-color:  rgb(196, 255, 77);
+    outline: 0;
+    border-shadow: 0 0 0 0.23rem rgb(255, 255, 0);  
+  }
+  
+  .radio-input, .checkbox-input {
+    display: inline-block;
+    margin-right: 0.625rem;
+    min-width: 1.25rem;
+    min-height: 1.25rem;
+  }
+  
+  .textarea-input{
+    width: 100%;
+    min-height: 120px;
+    padding: .625rem;
+    resize: vertical;
+  }
+  
+  .submit-button {
+    display: block;
+    width: 100%;
+    color: var(--color-dark);
+    background-color: var(--color-greenblue);
+    padding: .75rem;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  select {
+    color: gray;
+  }
+  option:not(:first-of-type) {
+    color: black;
+  }
+  
